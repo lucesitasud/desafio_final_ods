@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Lexend&display=swap');
+
+html, body {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #faf0f6;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 20px 0;
+}
+
+section hr {
+    width: 30px;
+}
+/* --------  Header  -------- */
+
+header {
+    height: 8%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #f76dcd;
+}
+#logo {
+    position: absolute;
+    top: 10px;
+    float: left;
+    height: 80px;
+    width: 170px;
+    margin-left: 5%;
+}
+header #logo img{
+    max-height: 100%;
+}
+header .menu {
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    margin-right: 5%;
+}
+header .menu li {
+    float: left;
+    font-size: 25px;
+    padding: 20px 10px 20px 10px;
+}
+header .menu li a {
+    color: initial;
+    text-decoration: initial;
+    color: rgb(248, 215, 228);
+}
+header .menu li:hover {
+    background-color: #e73177;
+}
+/* --------  inicio  -------- */
+figure {
+    margin: 0 auto;
+}
+#capa {
+    background-image: url(../imagenes/fondo.webp);
+    background-size: cover;
+    height: 100%;
+    padding: 10px;
+}
+figure .titulo {
+    color: rgb(248, 215, 228);
+    font-family: Lexeng;
+    line-height: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9)
+
+}
+figure h1.titulo {
+    font-size: 90px;
+    letter-spacing: -5px;
+    margin: 20% 20% 0 20%;
+    padding-bottom: 20px;
+}
+figure h2.titulo {
+    padding-top: 20px;
+    font-size: 30px;
+    margin: 0 30% 0 30%;
+    padding-bottom: 30px;
+}
+.cta {
+    border: 1px solid white;
+    border-radius: 8px;
+    color: rgb(248, 215, 228);
+    padding: 10 20 10 20;
+    text-decoration: initial;
+    font-size: 20px;
+    background-color: #f76dcd;
+}
+.cta:hover {
+    background-color: #e73177;
+    border: 0px;
+}
+
+#imagenes-estadisticas{
+    display: flex;
+    max-width: 100vw;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+.img-des{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 40px;
+}
+.img-des:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.05); 
+    transform: rotate(-1.2deg) scale(1.05);
+    transition: 0.6s ease-out;
+    filter: grayscale(0.9);
+}
+/* --------  Columnas  -------- */
+.columna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.columna.cuatro {
+    width: 15%;
+    padding: 0 5% 0 5%;
+}
+.columna.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+.columna.dos {
+    width: 40%;
+}
+.columna .icone {
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    margin: 0 auto;
+}
+.columna .icone img{
+    max-width: 60%;
+    max-height: 60%;
+    margin: 15px;
+}
+.columna:hover > .icone {
+    background: #e73177;
+}
+.columna img {
+    height: 350px;
+    width: 65%;
+}
+.columna iframe { 
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/* --------  Textos  -------- */
+h2 {
+    font-family: Lexend;
+    color: #e73177;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 4%;
+}
+h3{
+    font-size: 28px;
+    color: #e73177;
+    text-align: center;
+}
+p, ol{
+    font-size: 18px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.centro {
+    text-align: center;
+}
+.justificado {
+    text-align: justify;
+}
+/* --------  Footer  -------- */
+footer {
+    background-color: #f76dcd;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 50px 0;
+    color: #fff;
+}
+footer .container {
+    padding: 30px 0 50px 0;
+}
+/* --------  Responsividade  --------*/
+@media all and (max-width: 768px) {
+  .columna, .columna.cuatro, .columna.tres, .columna.dos {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+  header #logo {
+        position: relative;
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+  .menu {
+        visibility: hidden;
+    }
+  figure h1.titulo {
+        margin-top: 40%;
+    }
+  figure h2.titulo {
+        margin: 0 10% 0 10%;
+    }
+}
